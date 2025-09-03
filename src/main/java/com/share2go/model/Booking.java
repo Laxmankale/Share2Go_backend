@@ -14,14 +14,25 @@ public class Booking {
 
 	private int numberOfSeats;
 
+	private String status;
+
 	@ManyToOne
 	@JoinColumn(name = "passenger_id")
 	private User passenger;
 
 	@ManyToOne
+	@JoinColumn(name = "ride_id")
 	private Ride ride;
 
 	private LocalDateTime bookingTime;
+
+	public String getStatus() {
+		return status;
+	}
+
+	public void setStatus(String status) {
+		this.status = status;
+	}
 
 	public Long getId() {
 		return id;
@@ -62,6 +73,5 @@ public class Booking {
 	public void setPassenger(User passenger) {
 		this.passenger = passenger;
 	}
-	
-	
+
 }
