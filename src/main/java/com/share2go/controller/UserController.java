@@ -26,7 +26,6 @@ public class UserController {
 		return userService.login(email, password);
 	}
 
-	// Get all users
 	@GetMapping
 	public List<UserDTO> getAllUsers() {
 		return userService.getAllUser();
