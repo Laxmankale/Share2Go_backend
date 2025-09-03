@@ -1,0 +1,12 @@
+package com.share2go.controller;
+
+import org.springframework.web.bind.annotation.*;
+
+@RestController
+@RequestMapping("/api/bookings")
+public class BookingController {
+
+	
+	
+
+}
